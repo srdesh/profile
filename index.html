@@ -1,600 +1,123 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>index</title>
-	<meta http-equiv="refresh" content="100000" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<!-- ===================================CSS========================================= -->
-	<!-- boostrap -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<!-- custom css -->
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<!-- slick slider css -->
-	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
-	<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
-	<!-- font awesome -->
-	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 
+<head>
+	<title>Salman's Design</title>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	
+	<style>
+		body{
+			padding-top: 70px;
+			background-color: #f1f1f2;
+		}
+		#logoFirstPart{
+			font-size: 24px;
+			font-family: open sans, arial;
+			font-weight: 700;
+			color: #999999;
+		}
+		blockquote{
+			border-left: 5px solid #d1d2d4;
+		}
+		.mobile,.web{
+			text-align: center;
+		}
+		footer{
+			height: 100px;
+			width: 100%;
+			background-color: #000000;
+			color: #ffffff;
+		}
+	</style>
 </head>
 
-
 <body>
-
-	<!--*****headerNavBar*****!-->
-	<nav class="navbar navbar-inverse navbar-fixed-top">
-		<div class="container-fluid">
-    		<div class="navbar-header">
-	    		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-trigger" aria-expanded="false">
-	        		<span class="sr-only">Toggle navigation</span>
-	        		<span class="icon-bar"></span>
-	        		<span class="icon-bar"></span>
-	        		<span class="icon-bar"></span>
-	      		</button>
-	      		<a class="navbar-brand c-brand-name" href="#">PROCHITO ITS</a>
-	      	</div>
-			<div class="collapse navbar-collapse" id="collapse-trigger">
-				<ul class="nav navbar-nav navbar-right">
-					<li><a data-scroll href="#home">HOME</a></li>
-					<li><a data-scroll href="#about">ABOUT</a></li>
-					<li><a data-scroll href="#skills">SKILLS</a></li>
-			        <li><a data-scroll href="#work">WORK</a></li>
-			        <li><a data-scroll href="#">ACHIEVEMENT</a></li>
-			        <li><a data-scroll href="#">QUOTE</a></li>
-			        <li><a data-scroll href="#">CONTACT</a></li>
-				</ul>
+	<!--headerNavBar!-->
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#"><label id="logoFirstPart">SALMAN'S DESIGN</label></a>
 			</div>
 		</div>
 	</nav>
-
-	<!-- ****hero-unit***** -->
-	<section class="hero-unit" style="background-image: url('img/hero-img.jpg');" data-stellar-background-ratio="0.3">
-		<h1 class="hero-title">Let's Get Started</h1>
-	</section>
-
-	<!-- ****main page information div**** -->
-	<div class="container-fluid c-row1-div">
-		<!-- #####first row##### -->
-		<section class="row">
-			<div class="container">
-				<div class="col-sm-8">
-					<div class="c-row1-content">
-						<h3>Hybrid Apps Development</h3>
-						<p class="lead c-row-paragraph">We develop apps for both iOS and Android OS as well as webApps.</p>
-					</div>
-				</div>
-				<div class="col-sm-4">
-					<img class="img-responsive c-row-img" src="img/phone.png">
-				</div>
-			</div>				
-		</section>
-	</div>
-	<!-- ######second row###### -->
-	<div class="container-fluid c-row2-div">
-		<section class="container">
-			</br>
-			<!-- 1st highlight row -->
-			<div class="row">
-				<div class="col-sm-2">
-					<img class="img-circle img-responsive c-row2-img" src="img/hl-1.png">
-				</div>
-				<div class="col-sm-4">
-					<div class="c-row2-content">
-						<h3>Front-End Development</h3>
-						<p class="lead c-row-paragraph">Let your website more glorious and charming with latest frameworks,
-						design and resources.</p>
-					</div>
-				</div>
-					
-				<div class="col-sm-2">
-					<img class="img-circle img-responsive c-row2-img" src="img/hl-2.png">
-				</div>
-				<div class="col-sm-4">
-					<div class="c-row2-content">
-						<h3>Front-End Development</h3>
-						<p class="lead c-row-paragraph">Let your website more glorious and charming with latest frameworks,
-						design and resources.</p>
-					</div>
-				</div>
-			</div>	
-			</br>
-			<!-- 2nd highlight row -->
-			<div class="row">
-				<div class="col-sm-2">
-					<img class="img-circle img-responsive c-row2-img" src="img/hl-1.png">
-				</div>
-				<div class="col-sm-4">
-					<div class="c-row2-content">
-						<h3>Front-End Development</h3>
-						<p class="lead c-row-paragraph">Let your website more glorious and charming with latest frameworks,
-						design and resources.</p>
-					</div>
-				</div>
-					
-				<div class="col-sm-2">
-					<img class="img-circle img-responsive c-row2-img" src="img/hl-2.png">
-				</div>
-				<div class="col-sm-4">
-					<div class="c-row2-content">
-						<h3>Front-End Development</h3>
-						<p class="lead c-row-paragraph">Let your website more glorious and charming with latest frameworks,
-						design and resources.</p>
-					</div>
-				</div>
-			</div>
-			</br>
-			<!-- 3rd highlight row -->
-			<div class="row">
-				<div class="col-sm-2">
-					<img class="img-circle img-responsive c-row2-img" src="img/hl-1.png">
-				</div>
-				<div class="col-sm-4">
-					<div class="c-row2-content">
-						<h3>Front-End Development</h3>
-						<p class="lead c-row-paragraph">Let your website more glorious and charming with latest frameworks,
-						design and resources.</p>
-					</div>
-				</div>
-					
-				<div class="col-sm-2">
-					<img class="img-circle img-responsive c-row2-img" src="img/hl-2.png">
-				</div>
-				<div class="col-sm-4">
-					<div class="c-row2-content">
-						<h3>Front-End Development</h3>
-						<p class="lead c-row-paragraph">Let your website more glorious and charming with latest frameworks,
-						design and resources.</p>
-					</div>
-				</div>
-			</div>	
-			</br>	
-		</section>	
-	</div>		
-	<!-- ######fifth row####### -->
-	<div class="container-fluid c-row5-div">
-		<section class="row">
-			<div class="col-sm-4">
-				<div class="c-row5-content">
-					<h2><b>amujamu.com</b></h2>
-					<p class="lead c-row-paragraph">We develop apps for both iOS and Android OS as well as webApps.
-					We develop apps for both iOS and Android OS as well as webApps.
-					We develop apps for both iOS and Android OS as well as webApps.</p>
-					<button class="btn btn-default c-amujamu-button" type="submit"><b>Click to Visit</b></button>
-				</div>
-			</div>
-			<div class="col-sm-8">
-				<img class="img-responsive c-row-img-big" src="img/ipad-amujamu.png">
-			</div>
-		</section>
-	</div>
-	<!-- ######skill bar (6th row)########### -->
-	<div class="container-fluid c-row6-div">
-		<section class="container">
-			<div class="row">
-				<h3>Professional Skills</h3>
-				<hr>
-				<!-- html -->
-				<div class="col-sm-2">
-					<div id="bars">
-						<div class="bar" data-percent="100">
-							<h3>HTML</h3>
-							<canvas class="bar-circle" width="70" height="70"></canvas>
-						</div>
-					</div>
-				</div>
-				<!-- css -->
-				<div class="col-sm-2">
-					<div id="bars">
-						<div class="bar" data-percent="100">
-							<h3>CSS</h3>
-							<canvas class="bar-circle" width="70" height="70"></canvas>
-						</div>
-					</div>
-				</div>
-				<!-- js -->
-				<div class="col-sm-2">
-					<div id="bars">
-						<div class="bar" data-percent="90">
-							<h3>JavaScript</h3>
-							<canvas class="bar-circle" width="70" height="70"></canvas>
-						</div>
-					</div>
-				</div>
-				<!-- php -->
-				<div class="col-sm-2">
-					<div id="bars">
-						<div class="bar" data-percent="93">
-							<h3>PHP</h3>
-							<canvas class="bar-circle" width="70" height="70"></canvas>
-						</div>
-					</div>
-				</div>
-				<!-- python -->
-				<div class="col-sm-2">
-					<div id="bars">
-						<div class="bar" data-percent="85">
-							<h3>Python</h3>
-							<canvas class="bar-circle" width="70" height="70"></canvas>
-						</div>
-					</div>
-				</div>
-				<!-- UI/UX -->
-				<div class="col-sm-2">
-					<div id="bars">
-						<div class="bar" data-percent="91">
-							<h3>UI/UX</h3>
-							<canvas class="bar-circle" width="70" height="70"></canvas>
-						</div>
-					</div>
-				</div>
-
-			</div>
-		</section>
-	</div>
-	<!-- ######third row[member/employee]###### -->
-	<div class="container-fluid c-row3-div">
-		<section class="container">
+	
+	<!--body!-->
+	<div class="container">
+		<!--firstPart!-->
 			<div class="row">
 				<div class="col-sm-12">
-					<h3>Team Members</h3>
-					<hr>
-					<!-- member row 01 -->
-					<div class="row">
-						<div class="col-sm-3" align="center">
-	   						<div class="card">
-	   						    <div class="cardheader"></div>
-								<div class="card-img-box">
-									<img src="img/img-1.jpg" alt="..." class="card-img">
-									</br>
-										<h4>Sara Alen</h4>
-										<p>Software Engineer</p>
-										<blockquote class="blockquote">
-  											<i class="quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante."</i>
-										</blockquote>
-					                    <a href="#">
-					                        <i class="fa fa-github fa-lg c-fa" aria-hidden="true"></i>
-					                    </a>
-					                    <a href="#">
-					                        <i class="fa fa-twitter fa-lg c-fa" aria-hidden="true"></i>
-					                    </a>
-					                    <a href="#">
-					                        <i class="fa fa-linkedin fa-lg c-fa" aria-hidden="true"></i>
-					                    </a>
-								</div>	
-							</div>
-						</div>
-						<!-- // -->
-						<div class="col-sm-3" align="center">
-	   						<div class="card">
-	   						    <div class="cardheader"></div>
-								<div class="card-img-box">
-									<img src="img/img-1.jpg" alt="..." class="card-img">
-									</br>
-										<h4>Sara Alen</h4>
-										<p>Software Engineer</p>
-										<blockquote class="blockquote">
-  											<i class="quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante."</i>
-										</blockquote>
-					                    <a href="#">
-					                        <i class="fa fa-github fa-lg c-fa" aria-hidden="true"></i>
-					                    </a>
-					                    <a href="#">
-					                        <i class="fa fa-twitter fa-lg c-fa" aria-hidden="true"></i>
-					                    </a>
-					                    <a href="#">
-					                        <i class="fa fa-linkedin fa-lg c-fa" aria-hidden="true"></i>
-					                    </a>
-								</div>	
-							</div>
-						</div>
-						<!-- // -->
-						<div class="col-sm-3" align="center">
-	   						<div class="card">
-	   						    <div class="cardheader"></div>
-								<div class="card-img-box">
-									<img src="img/img-1.jpg" alt="..." class="card-img">
-									</br>
-										<h4>Sara Alen</h4>
-										<p>Software Engineer</p>
-										<blockquote class="blockquote">
-  											<i class="quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante."</i>
-										</blockquote>
-					                    <a href="#">
-					                        <i class="fa fa-github fa-lg c-fa" aria-hidden="true"></i>
-					                    </a>
-					                    <a href="#">
-					                        <i class="fa fa-twitter fa-lg c-fa" aria-hidden="true"></i>
-					                    </a>
-					                    <a href="#">
-					                        <i class="fa fa-linkedin fa-lg c-fa" aria-hidden="true"></i>
-					                    </a>
-								</div>	
-							</div>
-						</div>
-						<!-- // -->
-						<div class="col-sm-3" align="center">
-	   						<div class="card">
-	   						    <div class="cardheader"></div>
-								<div class="card-img-box">
-									<img src="img/img-1.jpg" alt="..." class="card-img">
-									</br>
-										<h4>Sara Alen</h4>
-										<p>Software Engineer</p>
-										<blockquote class="blockquote">
-  											<i class="quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante."</i>
-										</blockquote>
-					                    <a href="#">
-					                        <i class="fa fa-github fa-lg c-fa" aria-hidden="true"></i>
-					                    </a>
-					                    <a href="#">
-					                        <i class="fa fa-twitter fa-lg c-fa" aria-hidden="true"></i>
-					                    </a>
-					                    <a href="#">
-					                        <i class="fa fa-linkedin fa-lg c-fa" aria-hidden="true"></i>
-					                    </a>
-								</div>	
-							</div>
-						</div>
-						<!-- // -->
-					</div>	
-				<!-- break -->
-				</br>
-				<!-- break -->
-				<!-- member row 02 -->
-					<div class="row">
-						<div class="col-sm-3" align="center">
-	   						<div class="card">
-	   						    <div class="cardheader"></div>
-								<div class="card-img-box">
-									<img src="img/img-1.jpg" alt="..." class="card-img">
-									</br>
-										<h4>Sara Alen</h4>
-										<p>Software Engineer</p>
-										<blockquote class="blockquote">
-  											<i class="quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante."</i>
-										</blockquote>
-					                    <a href="#">
-					                        <i class="fa fa-github fa-lg c-fa" aria-hidden="true"></i>
-					                    </a>
-					                    <a href="#">
-					                        <i class="fa fa-twitter fa-lg c-fa" aria-hidden="true"></i>
-					                    </a>
-					                    <a href="#">
-					                        <i class="fa fa-linkedin fa-lg c-fa" aria-hidden="true"></i>
-					                    </a>
-								</div>	
-							</div>
-						</div>
-						<!-- // -->
-						<div class="col-sm-3" align="center">
-	   						<div class="card">
-	   						    <div class="cardheader"></div>
-								<div class="card-img-box">
-									<img src="img/img-1.jpg" alt="..." class="card-img">
-									</br>
-										<h4>Sara Alen</h4>
-										<p>Software Engineer</p>
-										<blockquote class="blockquote">
-  											<i class="quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante."</i>
-										</blockquote>
-					                    <a href="#">
-					                        <i class="fa fa-github fa-lg c-fa" aria-hidden="true"></i>
-					                    </a>
-					                    <a href="#">
-					                        <i class="fa fa-twitter fa-lg c-fa" aria-hidden="true"></i>
-					                    </a>
-					                    <a href="#">
-					                        <i class="fa fa-linkedin fa-lg c-fa" aria-hidden="true"></i>
-					                    </a>
-								</div>	
-							</div>
-						</div>
-						<!-- // -->
-						<div class="col-sm-3" align="center">
-	   						<div class="card">
-	   						    <div class="cardheader"></div>
-								<div class="card-img-box">
-									<img src="img/img-1.jpg" alt="..." class="card-img">
-									</br>
-										<h4>Sara Alen</h4>
-										<p>Software Engineer</p>
-										<blockquote class="blockquote">
-  											<i class="quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante."</i>
-										</blockquote>
-					                    <a href="#">
-					                        <i class="fa fa-github fa-lg c-fa" aria-hidden="true"></i>
-					                    </a>
-					                    <a href="#">
-					                        <i class="fa fa-twitter fa-lg c-fa" aria-hidden="true"></i>
-					                    </a>
-					                    <a href="#">
-					                        <i class="fa fa-linkedin fa-lg c-fa" aria-hidden="true"></i>
-					                    </a>
-								</div>	
-							</div>
-						</div>
-						<!-- // -->
-						<div class="col-sm-3" align="center">
-	   						<div class="card">
-	   						    <div class="cardheader"></div>
-								<div class="card-img-box">
-									<img src="img/img-1.jpg" alt="..." class="card-img">
-									</br>
-										<h4>Sara Alen</h4>
-										<p>Software Engineer</p>
-										<blockquote class="blockquote">
-  											<i class="quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante."</i>
-										</blockquote>
-					                    <a href="#">
-					                        <i class="fa fa-github fa-lg c-fa" aria-hidden="true"></i>
-					                    </a>
-					                    <a href="#">
-					                        <i class="fa fa-twitter fa-lg c-fa" aria-hidden="true"></i>
-					                    </a>
-					                    <a href="#">
-					                        <i class="fa fa-linkedin fa-lg c-fa" aria-hidden="true"></i>
-					                    </a>
-								</div>	
-							</div>
-						</div>
-						<!-- // -->
-					</div>
-				</div>		
-			</div>	
-		</section>
-	</div>
-	<!-- break -->
-	</br></br>
-	<!-- break -->
-	<!-- clinet comments -->
-	<div class="container-fluid c-row1-div">
-		<!-- #####first row##### -->
-			<div class="container">
-					<div class="c-row6-content">
-						<img class="img-responsive c-row-img-client img-circle" src="img/img-1.jpg">
-						<p class="lead c-row-paragraph">We develop apps for both iOS and Android OS as well as webApps.</p>
-					</div>
+					<h1>Hi, I'm <strong>Salman Rahman Desh</strong></h1>
+					<p> 
+							I'm working as an UI/UX Designer at <a href="http://its.prochito.com/">Prochito IT Solution.</a>
+							Design is my fascination for which I love to do design. Most favorite design and platform are Material and Mobile respectively. And also practicing other designs like Minimal and Flat line art. I support open source and web, so you can remake and share my designs. Besides all these, I also do volunteering at Mozilla as a Representative and Tech Speaker.  
+							Catch me on: 
+							<a href="https://twitter.com/Salman_Desh">twitter</a>
+							<a href="https://bd.linkedin.com/in/salmanrahmandesh">Linkedin</a>
+							<a href="https://mozillians.org/en-US/u/salmanrahmandesh/">Mozillian</a>
+							<a href="http://salmanrahmandesh.com/category/blog/">Blog</a>
+							</br></br>
+							<blockquote>
+  								<p>In my opinion, no single design is apt to be optimal for everyone.</p>
+  								<p>- Don Norman</p>
+							</blockquote>
+					</p>
+				</div>					
 			</div>
-	</div>
-	<!-- ######fourth row[contact us]###### -->
-	<div class="container-fluid c-row4-div">
-		<div class="container">
-			<section class="row">
-				<div class="col-sm-9">
-					<div class="c-row4-content">
-						<h3>Get in touch</h3>
-						<p class="lead c-row-paragraph"><i>Left your queries here >></i></p>
+	</div>	
+			</br></br>
+
+			<!-- mobile -->
+			<div class="mobile container">
+				<div class="row">
+					<div class="col-sm-12">
+						<img class="img-responsive" src="res/1.jpg">
+					</div>
+					<h1 class="subtitle">Mobile UI/UX Designs</h1>
+					<div class="col-sm-12">
+						<img class="img-responsive" src="res/2.jpg">
+					</div>
+					<div class="col-sm-12">
+						<img class="img-responsive" src="res/3.jpg">
+					</div>
+					<div class="col-sm-12">
+						<img class="img-responsive" src="res/4.jpg">
+					</div>
+					<div class="col-sm-12">
+						<img class="img-responsive" src="res/5.jpg">
+					</div>
+					<div class="col-sm-12">
+						<img class="img-responsive" src="res/6.jpg">
 					</div>
 				</div>
-				<div class="col-sm-3 c-row4-content-button">
-					<button class="btn btn-default c-contact-button" type="submit"><b>Contact Us</b></button>
-				</div>				
-			</section>
-		</div>
-	</div>
+			</div>
 
-
-
-
-
-
-
-<!-- ======================================javascript================================== -->
-<!-- steller js -->
-<script src="js/jquery-2.0.2.js"></script>
-<script src="js/jquery.stellar.min.js"></script>
-<!-- slick slider -->
-<script type="text/javascript" src="js/slick.min.js"></script>
-<!-- boostrap js -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-<!-- custom js -->
-<script>
-	//paralax
-    $.stellar();
-
-    // slide
-	$(document).ready(function(){
-	  $('.ok').slick({
-	  	autoplay: true,
-	  	autoplaySpeed: 500,
-	    dots: true,
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1
-	  });
-	});
-
-	//skill bar
-	(function() {
-	
-		var Progress = function( element ) {
-			
-			this.context = element.getContext( "2d" );
-			this.refElement = element.parentNode;
-			this.loaded = 0;
-			this.start = 4.72;
-			this.width = this.context.canvas.width;
-			this.height = this.context.canvas.height;
-			this.total = parseInt( this.refElement.dataset.percent, 10 );
-			this.timer = null;
-			
-			this.diff = 0;
-			
-			this.init();	
-		};
+			</br></br>
+			<!-- web -->
+			<div class="web container">
+				<h1 class="subtitle">Web UI/UX Design</h1>
+				<div class="row">
+					<div class="col-sm-12" align="center">
+						<img class="img-responsive" src="res/7.jpg">
+					</div>
+				</div>
+			</div>
 		
-		Progress.prototype = {
-			init: function() {
-				var self = this;
-				self.timer = setInterval(function() {
-					self.run();	
-				}, 25);
-			},
-			run: function() {
-					var self = this;
-					
-					self.diff = ( ( self.loaded / 100 ) * Math.PI * 2 * 10 ).toFixed( 2 );	
-					self.context.clearRect( 0, 0, self.width, self.height );
-					self.context.lineWidth = 10;
-					self.context.fillStyle = "#7f8c8d";
-					self.context.strokeStyle = "#e67e22";
-					self.context.textAlign = "center";
-					
-					self.context.fillText( self.loaded + "%", self.width * .5, self.height * .5 + 2, self.width );
-					self.context.beginPath();
-					self.context.arc( 35, 35, 30, self.start, self.diff / 10 + self.start, false );
-					self.context.stroke();
-					
-					if( self.loaded >= self.total ) {
-						clearInterval( self.timer );
-					}
-					
-					self.loaded++;
-				}
-			};
-			
-			var CircularSkillBar = function( elements ) {
-				this.bars = document.querySelectorAll( elements );
-				if( this.bars.length > 0 ) {
-					this.init();
-				}	
-			};
-			
-		CircularSkillBar.prototype = {
-			init: function() {
-			this.tick = 25;
-			this.progress();		
-			},
-			progress: function() {
-			var self = this;
-			var index = 0;
-			var firstCanvas = self.bars[0].querySelector( "canvas" );
-			var firstProg = new Progress( firstCanvas );
-					
-					
-					
-				var timer = setInterval(function() {
-					index++;
-									
-					var canvas = self.bars[index].querySelector( "canvas" );
-					var prog = new Progress( canvas );
-								
-						if( index == self.bars.length ) {
-							clearInterval( timer );
-						} 
-						
-				}, self.tick * 100);
-						
-			}
-		};
-			
-		document.addEventListener( "DOMContentLoaded", function() {
-			var circularBars = new CircularSkillBar( "#bars .bar" );
-		});
+		
+	<!--footer!-->
+		<footer>
+			<div class="container-fluid">
+				<h4 class="text-center">email: salmanrahmandesh@gmail.com</h4>
+			</div>
+		</footer>
+
+
+<!-- js -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 	
-	})();
-</script>
-
-
 </body>
+
 </html>
