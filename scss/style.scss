@@ -1,0 +1,305 @@
+$color-a: #e67e22; //light orange: carrot
+$color-b: #d35400; //deep orange: pumpkin
+$color-c: #27ae60; //paste color: nephritis
+$color-d: #f39c12;  //default orange
+$color-e: #7f8c8d; //ash color
+$color-f: #ecf0f1; //light ash
+$color-g: #bdc3c7;
+$white: #ffffff;  //white
+
+
+
+  /*slides*/
+  #jssor_1{
+    position: relative;
+    margin: 0 auto;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    visibility: hidden;
+  }
+    #jssor_1_slides{
+    cursor: default;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+  }
+
+
+body{
+
+	margin: 0 0 0 0;
+	width: 100%;
+	color: $color-e;
+
+	//hero sector
+  	.hero-unit{
+	    background-size: cover;
+	    width: 100%;
+	    height: 659px;
+  	}
+  	.hero-title{
+	    color: #FFFFFF;
+	    font-family: open sans;
+	    font-size: 80px;
+	    font-weight: 600;
+	    letter-spacing: -1px;
+	    line-height: 100%;
+	    position: relative;
+	    text-align: center;
+	    top: 200px;
+	    text-shadow: 0 1px 1px #000000;
+  	}
+  	.hero-subtitle{
+	    color: #FFFFFF;
+	    font-family: open sans;
+	    font-size: 30px;
+	    font-weight: 100;
+	    position: relative;
+	    top: 200px;
+	    text-shadow: 0 1px 1px #000000;
+  	}
+  	// navbar
+  	.navbar-inverse{
+		background-color: $color-d;
+		border: none;
+		.navbar-brand{
+		  		color: $white;
+	  	}
+	  	.navbar-toggle{
+	  		background-color: $color-a;
+	  		border: $color-a;
+	  	}
+	  	.navbar-toggle:hover{
+	  		background-color: $color-a;
+	  		border: $color-a;
+	  	}
+	  	.navbar-nav{
+	  		li{
+	  			a{
+	  				color: $white;
+	  			}
+	  			a:hover{
+	  				color: $color-b;
+	  			}
+	  		}
+	  	}
+  	}
+  	.container-fluid{
+  		.navbar-header{
+  			border: none;
+  		}
+  	}
+  	//section
+	section{
+		background-attachment: fixed;
+	}
+	//rows-div
+	.c-row1-div{
+		background-color: $color-a;
+		background-attachment: fixed;
+	}
+
+	.c-row2-div{
+		@extend.c-row1-div;
+		background-color: $color-b;
+	}
+
+	.c-row3-div{
+		@extend.c-row1-div;
+		text-align: center;
+		background-color: $white;
+	}
+
+	.c-row4-div{
+		@extend.c-row1-div;
+		background-color: $color-e;
+	}
+	.c-row5-div{
+		@extend.c-row1-div;
+		background-color: $color-f;
+	}
+	.c-row6-div{
+		@extend.c-row1-div;
+		background-color: $white;
+		text-align: center;
+	}
+	//rows-contents
+	.c-row1-content{
+		color: $white;
+		height: 300px;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	.c-row2-content{
+		color: $white;
+	}
+
+	.c-row4-content{
+		color: $white;
+		margin: 3% 3% 0% 0%;
+	}
+
+	.c-row4-content-button{
+		color: $white;
+		margin: 3% 0% 0% 0%;
+		display: flex; 
+		justify-content: center;
+	}
+	.c-row5-content{
+		color: $color-e;
+		height: 500px;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
+	.c-row6-content{
+		color: $white;
+		height: 300px;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align: center;
+	}
+	//row image
+	.c-row-img{
+		max-width: 100%;
+		height: auto;
+		display: block;
+	}
+	.c-row-img-big{
+		max-width: 100%;
+		height: auto;
+		display: block;
+	}
+	.c-row-img-client{
+		width: 80px;
+		height: auto;
+		display: block;
+	}
+	.c-row2-img{
+		height: 120px;
+		width: 120px;
+		display: block;
+		margin: auto;
+	}
+	//row paragraph
+	.c-row-paragraph{
+		font-size: 16px;
+	}
+	//amujamu button
+	.c-amujamu-button{
+		border: none;
+		color: $white;
+		background-color: $color-a;
+		height: 40px;
+		width: 140px;
+	}
+	.c-amujamu-button:hover{
+		background-color: $color-b;
+		color: $white;
+	}
+
+	//skill bar
+	#bars {
+		margin: 2em auto;
+		max-width: 960px;
+		overflow: hidden;
+	}
+
+	.bar {
+		text-align: center;
+		color: $color-e;
+		h3 {
+			font-size: 1em;
+			font-weight: normal;
+			margin: 0;
+			text-transform: uppercase;
+		}
+	}
+
+	.bar-circle {
+		display: block;
+		margin: 0.7em auto;
+		color: $color-e;
+	}
+
+	//team member
+	.card{
+	padding-top: 0; 
+	text-align: center;
+	background-color: $color-f;
+	
+		.cardheader {
+		    background-color: $white;
+		    background-size: cover;
+		    height: 80px;
+		}
+
+		.card-img-box{
+			position: relative; 
+			top: -50px;
+
+			a{
+				text-decoration: none;
+			}
+
+			.c-fa{
+				color: $color-a;
+				text-decoration: none;
+			}
+
+			.c-fa:hover{
+				color: $color-b;
+				text-decoration: none;
+			}
+
+			.blockquote{
+				border-left: 5px solid $color-a;
+				text-align: center;
+			}
+
+			.quote{
+				font-size: 12px;
+				font-weight: 200;
+				color: $color-e;
+				opacity: 0.5;
+				display: inline-block;
+				line-height: 1;
+			}
+			
+			.card-img{
+				width: 100px;
+				height: 100px; 
+				max-width: 100px; 
+				max-height: 100px; 
+				-webkit-border-radius: 50%; 
+				-moz-border-radius: 50%; 
+				border-radius: 50%; 
+				border: 5px solid rgba(255,255,255,0.5);
+			}
+		}
+
+	}
+	//contact us
+	.c-contact-button{
+		border: none;
+		color: $color-e;
+		background-color: $color-g;
+		height: 40px;
+		width: 140px;
+	}
+
+	.c-contact-button:hover{
+		background-color: $white;
+		color: $color-e;
+	}
+	//
+}
