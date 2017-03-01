@@ -13,16 +13,10 @@
 			padding-top: 70px;
 			background-color: #f1f1f2;
 		}
-		#logoFirstPart{
-			font-size: 24px;
-			font-family: open sans, arial;
-			font-weight: 700;
-			color: #999999;
-		}
 		blockquote{
 			border-left: 5px solid #d1d2d4;
 		}
-		.mobile,.web{
+		#mobile, #web, #vector, #flyer{
 			text-align: center;
 		}
 		footer{
@@ -39,7 +33,25 @@
 	<nav class="navbar navbar-default navbar-fixed-top">
 		<div class="container">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="#"><label id="logoFirstPart">SALMAN'S DESIGN</label></a>
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse-trigger" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<!--company title-->
+				<a class="navbar-brand" href="#">
+					SALMAN'S DESIGN
+				</a>
+			</div>
+			<div class="collapse navbar-collapse" id="collapse-trigger">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a data-scroll href="#about">ABOUT</a></li>
+					<li><a data-scroll href="#mobile">MOBILE UI</a></li>
+					<li><a data-scroll href="#web">WEB UI</a></li>
+					<li><a data-scroll href="#vector">VECTOR</a></li>
+					<li><a data-scroll href="#flyer">FLYER</a></li>
+				</ul>
 			</div>
 		</div>
 	</nav>
@@ -48,7 +60,7 @@
 	<div class="container">
 		<!--firstPart!-->
 			<div class="row">
-				<div class="col-sm-12">
+				<div id="about" class="col-sm-12">
 					<h1>Hi, I'm <strong>Salman Rahman Desh</strong></h1>
 					<p> 
 							I'm working as an UI/UX Designer at <a href="http://its.prochito.com/">Prochito IT Solution.</a>
@@ -70,7 +82,7 @@
 			</br></br>
 
 			<!-- mobile -->
-			<div class="mobile container">
+			<div id="mobile" class="container">
 				<div class="row">
 					<div class="col-sm-12">
 						<img class="img-responsive" src="res/1.jpg">
@@ -96,7 +108,7 @@
 
 			</br></br>
 			<!-- web -->
-			<div class="web container">
+			<div id="web" class="container">
 				<h1 class="subtitle">Web UI/UX Design</h1>
 				<div class="row">
 					<div class="col-sm-12" align="center">
@@ -104,8 +116,32 @@
 					</div>
 				</div>
 			</div>
-		
-		
+
+			</br></br>
+			<!--vector-->
+			<div id="vector" class="container">
+				<h1 class="subtitle">Vector Graphics</h1>
+				<div class="row">
+					<div class="col-sm-12" align="center">
+						<i>Client: amujamu.com</i>
+						<img class="img-responsive" src="res/8.jpg">
+					</div>
+				</div>
+			</div>
+
+			</br></br>
+			<!--vector-->
+			<div id="flyer" class="container">
+				<h1 class="subtitle">Flyer</h1>
+				<div class="row">
+					<div class="col-sm-12" align="center">
+						<i>Client: amujamu.com</i>
+						<img class="img-responsive" src="res/9.jpg">
+					</div>
+				</div>
+			</div>
+
+	</br></br>
 	<!--footer!-->
 		<footer>
 			<div class="container-fluid">
@@ -117,6 +153,11 @@
 <!-- js -->
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/smooth-scroll.js"></script>
+	<script>
+		/*vanilla.js for smooth scrolling*/
+		smoothScroll.init();
+	</script>
 	
 </body>
 
